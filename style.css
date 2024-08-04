@@ -8,9 +8,12 @@
 }
 
 /* shared styles  */
-main{
-    max-width: 1200px;
+body{
+    max-width: 1440px;
     margin: 0 auto;
+}
+section{
+    margin-top: 100px;
 }
 .flex{
     display: flex;
@@ -18,13 +21,42 @@ main{
 .black-bg{
     background-color: black;
 }
+.btn-primary{
+    background-color: #E6533C;
+    border: none;
+    width: 14rem;
+    color: white;
+    border-radius: 2.5rem;
+    padding: 1rem 2.75rem;
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+.btn-secondary{
+    background-color: black;
+    border: 2px solid white;
+    width: 14rem;
+    color: white;
+    border-radius: 2.5rem;
+    padding: 1rem 2.75rem;
+    font-weight: 600;
+    font-size: 1.125rem;
+}
 
+.regular{
+    font-size: 0.875;
+    color: rgba(255, 255, 255, 0.5);
+}
+.semi-18{
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: white;
+}
 
 
 /* nav section section  */
 .navbar{
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 .nav-title{
@@ -35,8 +67,8 @@ main{
     margin: auto 0;
 }
 
-.navlink{
-    border: 1px solid white;
+.navlinks{
+    border: 2px solid rgba(255, 255, 255, 0.1);
     border-radius: 50px;
     padding: 15px 5px;
 
@@ -58,5 +90,120 @@ main{
     color: white;
     margin-right: 50px;
     font-size: 1rem;
+}
+/* banner section */
+.banner{
+    gap: 100px;
+}
+.banner-container{
+    /* border: 2px solid red; */
+    padding: 30px;
+}
+.banner-title{
+    color: white;
+    font-size: 5rem;
+    font-weight: 900;
+}
+.banner-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1;
+}
+.banner-btn{
+    gap: 20px;
+}
+.banner-img{
+    /* border: 2px solid red; */
+}
+#shape{
+    font-size: 4.875rem;
+    font-weight: 400;
+}
+.badge{
+    margin-top: -25rem;
+}
+.tutorial-vids{
+    width: 180px;
+    height: 100px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid;
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 9.375rem;
+    margin-left: -6.25rem;
+    border: none;
+}
+#workout-vids{
+    width: 180px;
+    height: 100px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid;
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: -2.5rem;
+    margin-left: 15rem;
+    border: none;
+}
+.workout-vids-font{
+    font-size: 2rem;
+    font-weight: 900;
+}
+/* habit section styles  */
+.habit-header{
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.habit-img-container{
+    display: flex;
+    gap: 40px;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+}
+.habit-content{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.habit-content > img{
+    border-radius: 50%;
+}
+
+
+
+
+/* Responsive layout */
+@media screen and (max-width:576px) {
+    .nav-items{
+        display: none;
+        font-weight: 900;
+    }
+    .banner, .navbar, .banner-btn, .habit-img-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .tutorial-vids{
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    #workout-vids{
+        /* margin-top: 40px; */
+        margin-bottom: 60px;
+        margin-right: 50px;
+    }
+    .badge{
+        margin-bottom: 100px;
+    }
+    .habit-header{
+        justify-content: center;
+        align-items: center;
+    }
 }
 
